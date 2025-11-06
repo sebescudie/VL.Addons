@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="NJpX8hit7NbMHIaGznIClp" LanguageVersion="2025.7.1-0084-ga7be0d05a8" Version="0.128">
+  <NugetDependency Id="NZvWmTp62rrNehH3uZRh63" Location="VL.CoreLib" Version="2025.7.1-0084-ga7be0d05a8" />
+  <Patch Id="R9EGXO54pHjOdaznCYQH31">
+    <Canvas Id="TvJy6qeFt8TPQsflScUqEM" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Bu7A0JmAnanOAN8tch0XVa">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Tp1FS32haSTLLTYKIoRqBX">
+        <Canvas Id="LtslEnti4Y4Nk3PVD2xMQ1" CanvasType="Group">
+          <Node Bounds="209,421,65,19" Id="OuPh3EVohIFOQNp0vOrMiW">
+            <p:NodeReference LastCategoryFullName="Math" LastDependency="VL.Addons.Math.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Script" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="RalhYVkZ1txOyeZLkHItFT" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MBFhu2fHD2yQbaS5QovXVL" Name="Variables Names" Kind="InputPin" />
+            <Pin Id="EUo1poPH4gxO6pvkP3hZdc" Name="a" Kind="InputPin" PinGroupName="Variables">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="KgdGdf4gqLdO3Jlj98vRVy" Name="b" Kind="InputPin" PinGroupName="Variables">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Object" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PHtiELaNEFsPGClJHDMDo0" Name="Script" Kind="InputPin" />
+            <Pin Id="Joi08IBZjnFNTMwzRsngWQ" Name="Output" Kind="OutputPin" />
+            <Pin Id="LSkCnfnUfpzLbfD4NDf1cU" Name="Failure" Kind="OutputPin" />
+            <Pin Id="AQTPnXmaImKLiZRZsg7tQO" Name="Error Message" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Bv3Mb6RD7otOKD6otimlFK" Comment="Script" Bounds="271,302,212,119" ShowValueBox="true" isIOBox="true" Value="if (a == b)&#xD;&#xA;{ &#xD;&#xA;return 1;&#xD;&#xA;}&#xD;&#xA;else &#xD;&#xA;{ &#xD;&#xA;return 2;&#xD;&#xA;}">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="JLJu2UnU2fhLWyVwXz64w8" Comment="" Bounds="211,472,35,15" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="J0xIBWEXLQvOH3kElvQyhr" Comment="Variables Names" Bounds="211,172,35,15" ShowValueBox="true" isIOBox="true" Value="a,b">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TXXbi2cqRNyMn2tKsqndWl" Comment="a" Bounds="231,232,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S0Z1XucRBfLN93ZPgCDPBg" Comment="b" Bounds="251,254,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SJCiHH0GENaLSkvfuukWUv" Bounds="161,164,30,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VQYJmpsRsa2OXTfljMcFho" Bounds="579,175,30,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TVQ0VUL1nktNortGMwIUbj" Bounds="579,264,30,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SMmTdANcJavNDpKeB7FhRj" Bounds="579,346,25,27" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Fouvk7WZKzQQGnB0oPDrml" Bounds="579,439,25,27" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K3jUXgBd5KTQJi7H0PxqUu" Bounds="614,178,277,57" ShowValueBox="true" isIOBox="true" Value="Variable names, comma-separated. When you type the output of the node, those will show up as input pins">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MYjBke2E4FqMK5nNPPJekA" Bounds="614,265,277,57" ShowValueBox="true" isIOBox="true" Value="Type the output of the node to the desired type, so that it can run and create the input pins.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BXMLuGLYLpCOIq9gvciTcd" Bounds="614,349,277,57" ShowValueBox="true" isIOBox="true" Value="Create your input IOBoxes. Note they're of type Object, you can connect anything (here : Float and Int)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GDnaIcAPWceMbV74txOaig" Bounds="614,446,262,20" ShowValueBox="true" isIOBox="true" Value="Type your script and get the result!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S2uJxMbycarOsLyyDTEpff" Bounds="161,461,30,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RRy6y74XvwDPhSY60LWvfZ" Bounds="161,230,25,27" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IVDUgmDggeTP22SEO72DZM" Bounds="488,271,25,27" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:showvalue p:Type="Boolean">true</p:showvalue>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="JuYhsz6izgMK96S19rFYsn" Name="Basic usage" Bounds="123,110,844,415">
+            <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
+          </Overlay>
+          <Pad Id="TV1UNwvBJc0MfRe85IFaUB" Bounds="161,568,446,19" ShowValueBox="true" isIOBox="true" Value="For more advanced examples, check the undelying library's repository here">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UuqeskrzeNTN6DnJFhYpgg" Bounds="161,592,405,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/codingseb/ExpressionEvaluator/tree/master/CodingSeb.ExpressionEvaluator.Tests/Resources">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="QdPJe2AdJPlNhYHMrebmSN" Name="Create" />
+        <Patch Id="BWiWAJk4AYZP6S8boV76J9" Name="Update" />
+        <ProcessDefinition Id="Hcyo0XNI8jzM5bQiy6Rkli">
+          <Fragment Id="BQnvJBW3lrEMEqAqTOYazc" Patch="QdPJe2AdJPlNhYHMrebmSN" Enabled="true" />
+          <Fragment Id="BzzqRwfmPAQPsbBp6YRnH0" Patch="BWiWAJk4AYZP6S8boV76J9" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="BhqbzanQ6WgMBkvnGpDuxR" Ids="Bv3Mb6RD7otOKD6otimlFK,PHtiELaNEFsPGClJHDMDo0" />
+        <Link Id="M6yUVNsFeKqLA2jhr5v1Uw" Ids="Joi08IBZjnFNTMwzRsngWQ,JLJu2UnU2fhLWyVwXz64w8" />
+        <Link Id="Gq9dMokNIPxMNz168INDCe" Ids="J0xIBWEXLQvOH3kElvQyhr,MBFhu2fHD2yQbaS5QovXVL" />
+        <Link Id="KuLTW65mQ5eMeTADtMrBq2" Ids="TXXbi2cqRNyMn2tKsqndWl,EUo1poPH4gxO6pvkP3hZdc" />
+        <Link Id="OMte4EHhR6UPfQe3oHV0GI" Ids="S0Z1XucRBfLN93ZPgCDPBg,KgdGdf4gqLdO3Jlj98vRVy" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="T0i48dpK683PxLzXuSUvRa" Location="VL.Addons.Math" Version="0.5.2" />
+</Document>
